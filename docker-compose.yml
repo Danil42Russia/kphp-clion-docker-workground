@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  work_ground:
+    container_name: work_ground
+    build:
+      dockerfile: Dockerfile.focal
+    ports:
+      - target: 22
+        published: 2222
+        host_ip: 127.0.0.1
+      - target: 7777
+        published: 7777
+        host_ip: 127.0.0.1
