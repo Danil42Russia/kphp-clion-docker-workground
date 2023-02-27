@@ -30,4 +30,6 @@ EXPOSE 22 7777
 RUN useradd -ms /bin/bash kitten && \
     echo 'kitten:kitten' | chpasswd
 
+WORKDIR /home/kitten
+
 CMD ["/usr/sbin/sshd", "-D"]
