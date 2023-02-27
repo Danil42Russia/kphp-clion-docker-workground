@@ -23,6 +23,8 @@
 6. Создать новое подключение через <kbd>➕</kbd>
    ![](docs/13.png)
 7. Заполнить поля <kbd>Host</kbd>, <kbd>Port</kbd>, <kbd>Username</kbd>, <kbd>Password</kbd>
+   > Используем логин `kitten`
+
    ![](docs/14.png)
 8. По итогу должна получиться такая картина:
    ![](docs/15.png)
