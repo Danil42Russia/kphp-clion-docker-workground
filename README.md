@@ -13,7 +13,7 @@
 
 ## Настройка
 
-1. `docker-compose up`
+1. `docker-compose up -d`
 2. Открыть CLion
 3. Перейти <kbd>Preferences</kbd> > <kbd>Build, Execution, Deployment</kbd> > <kbd>Toolchains</kbd>
    ![](docs/11.png)
@@ -49,3 +49,6 @@ TODO: Описать про Deployment
 - Перенести сборку в отдельный файл
 - Улучить ИБ
 - Вынести настройки портов в отдельный конфиг
+- Описать проблему с профилями
+- Описать проблему с SSH ключами / чейнами
+- Описать сложность с Deployment
