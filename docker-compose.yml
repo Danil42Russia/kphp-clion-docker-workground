@@ -12,3 +12,9 @@ services:
       - target: 7777
         published: 7777
         host_ip: 127.0.0.1
+    networks:
+      - kphp_network
+
+networks:
+  kphp_network:
+    external: true

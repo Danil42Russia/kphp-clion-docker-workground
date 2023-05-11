@@ -15,6 +15,7 @@
 
 ## Настройка
 
+0. `docker network create kphp_network`
 1. `docker-compose up -d`
 2. Открыть CLion
 3. Перейти <kbd>Preferences</kbd> > <kbd>Build, Execution, Deployment</kbd> > <kbd>Toolchains</kbd>
@@ -55,7 +56,7 @@
 # Примечание
 
 - После изменения в `Dockerfile` не забываем добавлять флаг `--build`
-
+- При использовании postgres в качестве host указывается имя контейнера 
 
 ## Переделать / Доделать
 
