@@ -15,35 +15,35 @@
 
 ## Настройка
 
-0. `docker network create kphp_network`
-1. `docker-compose up -d`
-2. Открыть CLion
-3. Перейти <kbd>Preferences</kbd> > <kbd>Build, Execution, Deployment</kbd> > <kbd>Toolchains</kbd>
+1. Создадим сеть для общения между контейнерами `docker network create kphp_network`
+2. `docker-compose up -d`
+3. Открыть CLion
+4. Перейти <kbd>Preferences</kbd> > <kbd>Build, Execution, Deployment</kbd> > <kbd>Toolchains</kbd>
    ![](docs/11.png)
-4. Добавить через <kbd>➕</kbd> новый тип <kbd>Remote Host</kbd>
+5. Добавить через <kbd>➕</kbd> новый тип <kbd>Remote Host</kbd>
    ![](docs/12.png)
-5. Нажать на <kbd>⚙️</kbd> в <kbd>Credentials</kbd>
-6. Создать новое подключение через <kbd>➕</kbd>
+6. Нажать на <kbd>⚙️</kbd> в <kbd>Credentials</kbd>
+7. Создать новое подключение через <kbd>➕</kbd>
    ![](docs/13.png)
-7. Заполнить поля <kbd>Host</kbd>, <kbd>Port</kbd>, <kbd>Username</kbd>, <kbd>Password</kbd>
+8. Заполнить поля <kbd>Host</kbd>, <kbd>Port</kbd>, <kbd>Username</kbd>, <kbd>Password</kbd>
    > Используем логин `kitten`
 
    ![](docs/14.png)
-8. По итогу должна получиться такая картина:
+9. По итогу должна получиться такая картина:
    ![](docs/15.png)
-9. Перейти <kbd>Preferences</kbd> > <kbd>Build, Execution, Deployment</kbd> > <kbd>CMake</kbd>
+10. Перейти <kbd>Preferences</kbd> > <kbd>Build, Execution, Deployment</kbd> > <kbd>CMake</kbd>
    ![](docs/21.png)
-10. Скопировать или создать новый профиль
-11. Дать название профиля в поле <kbd>Name</kbd>
-12. Поменять <kbd>Toolchains</kbd> на <kbd>Remote Host</kbd>
+11. Скопировать или создать новый профиль
+12. Дать название профиля в поле <kbd>Name</kbd>
+13. Поменять <kbd>Toolchains</kbd> на <kbd>Remote Host</kbd>
     ![](docs/22.png)
-13. При запуске, поменять профиль на созданный
+14. При запуске, поменять профиль на созданный
     ![](docs/23.png)
-14. Перейти <kbd>Preferences</kbd> > <kbd>Build, Execution, Deployment</kbd> > <kbd>Deployment</kbd>
+15. Перейти <kbd>Preferences</kbd> > <kbd>Build, Execution, Deployment</kbd> > <kbd>Deployment</kbd>
     ![](docs/31.png)
-15. Изменить Deployment path на /home/kitten/kphp
+16. Изменить Deployment path на /home/kitten/kphp
     ![](docs/32.png)
-16. Также cmake файлы KPHP используют папку .git. Изначально она не доставляется в контейнер
+17. Также cmake файлы KPHP используют папку .git. Изначально она не доставляется в контейнер
 Для этого требуется перейти <kbd>Tools</kbd> > <kbd>Deployment</kbd> > <kbd>Options</kbd> и удалить
 .git из списка Exclude
     ![](docs/41.png)

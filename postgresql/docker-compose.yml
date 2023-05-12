@@ -8,11 +8,14 @@ services:
       POSTGRES_USER: "vadim"
       POSTGRES_PASSWORD: "vadim"
     volumes:
-      - .:/docker-entrypoint-initdb.d
+      - type: volume
+        source: .
+        target: docker-entrypoint-initdb.d
+        read_only: true
     ports:
       - published: 5432
         target: 5432
-        host_ip: "127.0.0.1"
+        host_ip: 127.0.0.1
     networks:
       - kphp_network
 
